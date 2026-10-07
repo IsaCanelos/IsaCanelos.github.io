@@ -48,6 +48,44 @@ button{border:0;border-radius:999px;padding:11px 16px;font-weight:800;cursor:poi
 .dropzone .poster{height:205px}
 footer{text-align:center;color:#8b7894;font-size:.78rem;margin-top:18px}
 @media(max-width:620px){.tier{grid-template-columns:58px 1fr}.badge{font-size:1.55rem}.pool{grid-template-columns:repeat(2,1fr)}.poster{height:215px}.dropzone .movie{width:145px}.dropzone .poster{height:185px}}
+.creator{
+  margin:28px auto 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  width:max-content;
+  max-width:100%;
+  padding:10px 16px;
+  border:1px solid #ead7f5;
+  border-radius:999px;
+  background:rgba(255,255,255,.78);
+  box-shadow:0 8px 24px #6f3d8d18;
+}
+
+.creator img{
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  object-fit:cover;
+  border:2px solid #ffb7df;
+}
+
+.creator-text{
+  text-align:left;
+  line-height:1.25;
+}
+
+.creator-text strong{
+  display:block;
+  color:#5e2879;
+  font-size:.88rem;
+}
+
+.creator-text span{
+  font-size:.72rem;
+  color:#8b7894;
+}
 </style>
 </head>
 <body>
@@ -67,7 +105,21 @@ footer{text-align:center;color:#8b7894;font-size:.78rem;margin-top:18px}
     <div class="tier" data-tier="D"><div class="badge">D</div><div class="dropzone"></div></div>
     <div class="tier" data-tier="F"><div class="badge">F</div><div class="dropzone"></div></div>
   </section>
-  <footer>Box office figures shown are approximate worldwide theatrical grosses. Your ranking is saved locally in this browser.</footer>
+  <footer>
+  <!-- <div>
+    Box office figures shown are approximate worldwide theatrical grosses.
+    Your ranking is saved locally in this browser.
+  </div> -->
+
+  <div class="creator">
+    <img src="IMG_5525.jpg" alt="Isabella Canelos">
+
+    <div class="creator-text">
+      <strong>Created by Isabella Canelos</strong>
+      <span>Rom-Com Royalty Tier List</span>
+    </div>
+  </div>
+</footer>
 </main>
 <script>
 const movies=[
